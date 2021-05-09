@@ -1,13 +1,15 @@
-def draw_button(label_text, x, y, foreground_color, is_dark_mode)
-    configureTheme(label_text, x, y, foreground_color, is_dark_mode)
-end
-
-def configureTheme(label_text, x, y, foreground_color, is_dark_mode)
-    buttonSchematics = ButtonSchematics.new(label_text, x, y, foreground_color)
-    if is_dark_mode
-        buttonSchematics.darkModeColor
-    else
-        buttonSchematics.lightModeColor
+class ButtonProperites
+    def draw_button(label_text, x, y, foreground_color, is_dark_mode)
+        configureTheme(label_text, x, y, foreground_color, is_dark_mode)
+    end
+    
+    def configureTheme(label_text, x, y, foreground_color, is_dark_mode)
+        buttonSchematics = ButtonSchematics.new(label_text, x, y, foreground_color)
+        if is_dark_mode
+            buttonSchematics.darkModeColor
+        else
+            buttonSchematics.lightModeColor
+        end
     end
 end
 
