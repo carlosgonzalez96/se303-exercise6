@@ -15,3 +15,6 @@ def lightModeColor(label_text, x, y, foreground_color)
     # lighten foreground color for non-dark mode
     paint(label_text, x, y, foreground_color + 10, '#E0E0E0')
 end
+
+class Buttonschematics
+end
